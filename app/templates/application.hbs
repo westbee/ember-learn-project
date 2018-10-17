@@ -1,5 +1,72 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<div class="extra-border">
+  <nav class="navbar navbar-custom navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-main-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <img src="http://martawilkphotography.com/img/logo_big.jpg" class="logo-nav img-responsive" alt="">
+      <div class="row">
+        <div class="col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+          <div class="nav">
+            {{!-- Collect the nav links, forms, and other content for toggling --}}
+            <div class="collapse navbar-collapse navbar-main-collapse">
+              <hr class="no-margin">
+              <ul class="nav nav-pills nav-justified">
+                {{!-- Hidden li included to remove active class from about link when scrolled up past about section --}}
+                <li class="hidden">
+                  <a href="#page-top"></a>
+                </li>
+                <li>{{link-to "Home" "index"}}</li>
+                <li>{{link-to "Gallery" "gallery"}}</li>
+                <li>{{link-to "über mich" "about"}}</li>
+                <li>{{link-to "Preise" "preise"}}</li>
+                <li>{{link-to "Info" "info"}}</li>
+                <li>{{link-to "Kontakt" "contact"}}</li>
+              </ul>
+              <hr class="no-margin">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-{{outlet}}
+  {{outlet}}
+
+  <section id="socialmedia">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+          <hr class="small-margin">
+          <div class="row">
+            <div class="col-sm-6 center-algn">
+              <div class="socialmedia-icon">
+                <ul class="soc">
+                  {{social-media-list}}
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 vertalg">
+              <div class="short-title">
+                <h6><strong>Fotografin | Marta Wilk | Berlin</strong></h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="text-center">
+      <p>&copy;2015-{{moment-format now "YYYY"}} Marta Wilk Photography | All rights reserved.</p>
+    </div>
+  </div>
+</footer>

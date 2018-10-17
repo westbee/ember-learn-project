@@ -1,0 +1,23 @@
+<section>
+  <div class="container">
+		<div class="row">
+			<div class="col-sm-offset-1 col-sm-10">
+				<div class="quote">
+					<h1>...because every picture tells a story...</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="content-section">
+	<div class="container">
+		<div class="row" id="category">
+      {{#each model as |categoryUnit|}}
+				{{category-list category=categoryUnit}}
+			{{/each}}
+		</div>
+	</div>
+</section>
+
+{{outlet}}

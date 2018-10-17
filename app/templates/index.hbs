@@ -1,0 +1,54 @@
+<section id="slider">
+	<div class="container">
+		<div class="slide-sample">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
+				<!-- Wrapper for slides -->
+				{{#bs-carousel as |car|}}
+          {{#car.slide}}
+            <img alt="First slide" src="http://martawilkphotography.com/img/top/top%201.jpg">
+          {{/car.slide}}
+          {{#car.slide}}
+            <img alt="Second slide" src="http://martawilkphotography.com/img/top/top%203.jpg">
+          {{/car.slide}}
+          {{#car.slide}}
+            <img alt="Third slide" src="http://martawilkphotography.com/img/top/top%204.jpg">
+          {{/car.slide}}
+        {{/bs-carousel}}
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="main-info" class="content-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-offset-1 col-sm-10">
+				<div class="intro-text">
+					<h4 class="text-center">Berliner Fotografin - Berlin & Umgebung</h4>
+					<p class="text-center">Ich halte deine schönsten Momente mit meiner Kamera fest. Jedes Foto lebt durch deine Emotionen und Erinnerungen!</p>
+				</div>
+			</div>
+			<div class="col-sm-offset-1 col-sm-10">
+				<hr>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="content-section">
+	<div class="container">
+		<div class="row" id="category">
+			{{#each model as |categoryUnit|}}
+				{{category-list category=categoryUnit}}
+			{{/each}}
+		</div>
+	</div>
+</section>
+
+{{outlet}}
