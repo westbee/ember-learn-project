@@ -1,7 +1,6 @@
-# mrtwlk
+# Learning project - mrtwlk
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is the learning project named mrtwlk. The purpose of the project is to get familiar with Ember.js framework and to build an Ember application based on the existing web application.
 
 ## Prerequisites
 
