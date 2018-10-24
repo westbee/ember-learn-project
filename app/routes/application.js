@@ -10,9 +10,9 @@ export default Route.extend({
   },
   {
     name: "Kinder & Familien",
-  	title: "- einzigartige Andenken für viele Jahre -",
+    title: "- einzigartige Andenken für viele Jahre -",
     pic: "http://martawilkphotography.com/img/kinder/medium/6.jpg",
-	  link: "gallery/kinder-familien"
+    link: "gallery/kinder-familien"
   },
   {
     name: "Porträtfotografie",

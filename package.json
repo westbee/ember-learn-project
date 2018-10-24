@@ -43,6 +43,8 @@
     "ember-load-initializers": "^1.1.0",
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-moment": "^7.8.0",
+    "ember-perfect-gallery": "^0.1.1",
+    "ember-resize": "^0.2.4",
     "ember-resolver": "^5.0.1",
     "ember-source": "~3.4.0",
     "eslint-plugin-ember": "^5.2.0",
