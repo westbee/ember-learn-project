@@ -5,13 +5,13 @@ export default Route.extend({
     return [{
     name: "Neugeborene & Babybauch",
     title: "- die schönste Zeit im Leben einer Frau -",
-    pic: "http://martawilkphotography.com/img/newborn/medium/39.jpg",
+    pic: "http://martawilkphotography.com/img/cat1.jpg",
     link: "gallery/neugeborene-babybauch"
   },
   {
     name: "Kinder & Familien",
     title: "- einzigartige Andenken für viele Jahre -",
-    pic: "http://martawilkphotography.com/img/kinder/medium/6.jpg",
+    pic: "http://martawilkphotography.com/img/cat2.jpg",
     link: "gallery/kinder-familien"
   },
   {
