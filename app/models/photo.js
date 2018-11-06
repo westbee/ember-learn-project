@@ -6,6 +6,6 @@ export default DS.Model.extend({
   categoryId: DS.attr('number'),
   href: DS.attr('string'),
 
-  gallery: DS.belongsTo('gallery-category')
+  gallery: DS.belongsTo('gallery')
 
 });
