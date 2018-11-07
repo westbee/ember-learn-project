@@ -6,6 +6,8 @@ export default DS.Model.extend({
   description: DS.attr('string'),
   pic: DS.attr('string'),
   link: DS.attr('string'),
+  prg1: DS.attr('string'),
+  prg2: DS.attr('string'),
 
-  photos: DS.hasMany('photo', { inverse: 'gallery' })
+  photo: DS.hasMany('photo', { inverse: 'gallery' })
 });
