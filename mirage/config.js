@@ -3,4 +3,5 @@ export default function() {
 
   this.get('/photos');
   this.get('/galleries');
+  this.get('/galleries/:gallery_id');
 }
