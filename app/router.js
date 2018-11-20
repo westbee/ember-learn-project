@@ -15,12 +15,7 @@ Router.map(function() {
   this.route('galleries', function() {
     this.route('gallery', { path: '/:gallery_id' });
   });
-
-  // this.route('gallery', function() {
-  //   this.route('neugeborene-babybauch');
-  //   this.route('kinder-familien');
-  //   this.route('portraitphotographie');
-  // });
+  
 });
 
 export default Router;

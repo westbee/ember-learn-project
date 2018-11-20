@@ -13,9 +13,6 @@
 <section class="content-section">
 	<div class="container">
 		<div class="row" id="category">
-      <!-- {{#each model.galleries as |gallery|}}
-				{{category-list}}
-			{{/each}} -->
       {{#each model.galleries as |gallery|}}
         <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-md-4 col-sm-offset-0">
           {{#link-to "galleries.gallery" gallery.id class="small-break no-deco"}}
