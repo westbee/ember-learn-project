@@ -44,8 +44,8 @@
 <section class="content-section">
 	<div class="container">
 		<div class="row" id="category">
-			{{#each model as |categoryUnit|}}
-				{{category-list category=categoryUnit}}
+      {{#each model.galleries as |gallery|}}
+        {{category-list gallery=gallery}}
 			{{/each}}
 		</div>
 	</div>
