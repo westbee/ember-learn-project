@@ -1,0 +1,46 @@
+<section class="content-section">
+	<div class="container">
+		<div class="row">
+      <div class="col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+        <div id="preise">
+			    <h4 class="text-center">{{price.title}}</h4>
+					<div class="p-description">
+            <p>{{price.description}}</p>
+          </div>
+          <div class="row">
+            {{#each price.package as |package|}}
+
+              {{#if (eq price.id "4")}}
+                {{#each package.picture as |picture|}}
+                  <div class="col-sm-4">
+                    <div class="preise-img">
+                      <img src="{{picture}}" class="img-responsive">
+                    </div>
+                  </div>
+                {{/each}}
+              {{/if}}
+
+              <div class="{{if (eq price.id "4") "col-sm-offset-3 col-sm-6" "col-sm-6"}}">
+
+                {{#if (not-eq price.id "4")}}
+                  <div class="preise-img">
+                    <img src="{{package.picture}}" class="img-responsive">
+                  </div>
+                {{/if}}
+
+                <div class="p-offer">
+                  <h4>{{package.name}} {{package.price}}€</h4>
+                  <hr>
+                  {{#each package.attributes as |attributes|}}
+                    <p>- {{attributes}}</p>
+                  {{/each}}
+                  <h6>jedes weitere Bild {{package.extras}}€</h6>
+                </div>
+              </div>
+            {{/each}}
+          </div>
+        </div>
+			</div>
+		</div>
+	</div>
+</section>
