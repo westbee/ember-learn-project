@@ -5,7 +5,6 @@ export default Route.extend({
     return this.store.findRecord('gallery', params.gallery_id);
   },
   async afterModel(model) {
-    await model.get('photos');
-    return this._super(...arguments);
+    return this.store.findAll('photo');
   }
 });
