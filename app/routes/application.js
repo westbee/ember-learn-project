@@ -8,8 +8,7 @@ export default Route.extend({
   model() {
     return RSVP.hash({
       galleries: this.store.findAll('gallery'),
-      photos: this.store.findAll('photo'),
-      prices: this.store.findAll('price')
+      photos: this.store.findAll('photo')
     });
   }
 });
