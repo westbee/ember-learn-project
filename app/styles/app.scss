@@ -340,51 +340,54 @@ img.text-wrap {
  margin: 5px;
  border: 1px solid #eee;
  border-radius: 10px;
- h6 {
-	 margin-bottom: 0px;
-	 text-transform: uppercase;
-	 color: #000;
- }
+	 .menu-preise-list__item_text {
+		 margin-bottom: 0px;
+		 text-transform: uppercase;
+		 color: #000;
+	 }
 }
 .menu-preise-list__item:hover {
  background-color: #000000;
  transition: background .3s ease-in-out;
- h6 {
-	 color: #fff;
-	 transition: background .3s ease-in-out;
- }
+	 .menu-preise-list__item_text {
+		 color: #fff;
+		 transition: background .3s ease-in-out;
+	 }
 }
 
 #preise {
-	h4 {
+	.preise__title {
 		text-transform: uppercase;
 	}
-	p {
-	  margin-bottom: 5px;
+	.preise__description {
+  	margin: 20px auto;
 	}
-	.p-offer h4 {
+	.preise__img {
+	  padding-top: 20px;
+	  padding-bottom: 20px;
+	}
+	.preise__package {
+	  padding-top: 20px;
+	}
+	.preise__package_name {
 	  text-transform: capitalize;
 	}
-}
-
-div.p-description {
-  margin: 20px auto;
-}
-
-div.preise-img {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-div.p-offer {
-  padding-top: 20px;
+	.preise__package_item {
+	  margin-bottom: 5px;
+	}
+	.preise__package_extras {
+	  text-align: left;
+	  margin-top: 20px;
+		font-weight: 600;
+	}
 }
 
 
-.p-offer h6 {
-  text-align: left;
-  margin-top: 15px;
-}
+
+
+
+
+
 
 /*fag*/
 
