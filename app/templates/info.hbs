@@ -2,11 +2,19 @@
 	<div class="container">
 		<div class="row">
 			 <div class="col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
-         <div class="faq-panel">
-           {{#each model as |info|}}
-     				<h5><strong>{{info.question}}</strong></h5>
-            <p>{{info.answer}}</p>
-     			 {{/each}}
+         <div class="faq__panel">
+					 {{#cp-panels accordion=true as |panels|}}
+					 	{{#each model as |info|}}
+					 	  {{#panels.panel as |panel|}}
+					 	    {{#panel.toggle}}
+					 	      <h5 class="faq__panel_question">{{info.question}}</h5>
+					 	    {{/panel.toggle}}
+					 	    {{#panel.body}}
+					 				<p class="faq__panel_answer">{{info.answer}}</p>
+					 	    {{/panel.body}}
+					 	  {{/panels.panel}}
+					 	{{/each}}
+					 {{/cp-panels}}
          </div>
        </div>
      </div>
