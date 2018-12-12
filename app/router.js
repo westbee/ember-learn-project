@@ -8,14 +8,19 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('about');
-  this.route('preise');
+
+  // this.route('price');
+  this.route('prices', function() {
+    this.route('price', { path: '/:price_id' });
+  });
+
   this.route('info');
   this.route('contact');
 
   this.route('galleries', function() {
     this.route('gallery', { path: '/:gallery_id' });
   });
-  
+
 });
 
 export default Router;
