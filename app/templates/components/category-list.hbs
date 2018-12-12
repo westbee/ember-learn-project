@@ -1,7 +1,5 @@
-<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-md-4 col-sm-offset-0">
-  <a href="{{category.link}}" class="small-break no-deco">
-    <img src="{{category.pic}}" class="img-responsive">
-    <h5 class="small-break">{{category.name}}</h5>
-    <p class="text-center">{{category.title}}</p>
-  </a>
-</div>
+{{#link-to "galleries.gallery" gallery.id class="small-break no-deco"}}
+  <img src={{gallery.pic}} class="img-responsive">
+  <h5 class="small-break">{{gallery.title}}</h5>
+  <p class="text-center">{{gallery.description}}</p>
+{{/link-to}}

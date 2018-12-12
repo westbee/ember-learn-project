@@ -11,11 +11,11 @@ Router.map(function() {
   this.route('preise');
   this.route('info');
   this.route('contact');
-  this.route('gallery', function() {
-    this.route('neugeborene-babybauch');
-    this.route('kinder-familien');
-    this.route('portraitphotographie');
+
+  this.route('galleries', function() {
+    this.route('gallery', { path: '/:gallery_id' });
   });
+  
 });
 
 export default Router;
