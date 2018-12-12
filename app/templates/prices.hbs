@@ -1,0 +1,13 @@
+<div class="container">
+ <div class="menu-preise-list">
+   <div class="row">
+     <div class="col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+       {{#each model as |price|}}
+       {{price-list price=price}}
+       {{/each}}
+     </div>
+   </div>
+ </div>
+</div>
+
+{{outlet}}
