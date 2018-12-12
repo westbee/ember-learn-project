@@ -5,4 +5,5 @@ export default function() {
   this.get('/galleries');
   // this.get('/galleries/:id');
   this.get('/galleries/:id', ['galleries', 'galleries.photos']);
+  this.get('/infos');
 }

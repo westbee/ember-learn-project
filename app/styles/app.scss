@@ -367,12 +367,22 @@ div.p-offer {
 
 /*fag*/
 
-.faq-panel h5 {
-  text-transform: uppercase;
-}
-
-.faq-panel p {
-  font-size: 13px;
+.faq__panel {
+	.cp-Panel-toggle:link {
+	  text-decoration: none;
+		color: #333;
+	}
+	.cp-Panel-toggle:hover {
+		color: #5a5a5a;
+		background-color: #000;
+	}
+	.faq__panel_question {
+	  text-transform: uppercase;
+		font-weight: 600;
+	}
+	.faq__panel_answer {
+	  font-size: 13px;
+	}
 }
 
 /*contact*/
