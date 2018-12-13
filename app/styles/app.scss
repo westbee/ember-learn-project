@@ -313,23 +313,15 @@ img.socico {
 
 /*about*/
 
-img.text-wrap {
-    float: left;
+.about {
+	.about__text_wrapped {
+		float: left;
     margin-right: 20px;
-}
-
-.about-text h4 {
-  text-transform: uppercase;
-  padding-top: 20px;
-  padding-bottom: 15px;
-}
-
-@media(min-width:768px) {
-    .about-text h4 {
-      padding-top: 0px;
-      padding-bottom: 30px;
-    }
-
+	}
+	.about__text {
+		text-align: justify;
+		margin-bottom: 10px;
+	}
 }
 
 /*preise*/
