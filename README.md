@@ -1,6 +1,6 @@
-# Learning project - mrtwlk
+# Learning project
 
-This is the learning project named mrtwlk. The purpose of the project is to get familiar with Ember.js framework and to build an Ember application based on the existing web application.
+This is the learning projectk. The purpose of the project is to get familiar with Ember.js framework and to build an Ember application based on the existing web application.
 
 ## Prerequisites
 
